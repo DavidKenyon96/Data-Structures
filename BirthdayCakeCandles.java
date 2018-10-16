@@ -1,4 +1,6 @@
 //Reference: https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+//"You are in charge of the cake for your niece's birthday and have decided the cake will have one candle for each year of her total age. When she blows out the candles,
+// she’ll only be able to blow out the tallest ones. Your task is to find out how many candles she can successfully blow out."
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -8,18 +10,17 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class BirthdayCakeCandles {
-
-    //A child can only blow out the the tallest candles. Given an array of n space-separated integers, count how
-	//many candles a child would be able to blow out
+	
     static int birthdayCakeCandles(int[] ar) {
+	    
     	//Set max to a negative value initially to ensure we evaluate the true max accurately
         int max=-1;    
         int maxCount=0;
         
         for(int i : ar)
         {
-        	//If the given value is greater than or equal to the current max, save it in a temporary max value
-        	//Furthermore, increment maxCount. This variable will be returned once the whole array is explored.
+	    //If the given value is greater than or equal to the current max, save it in a temporary max value
+	    //Furthermore, increment maxCount. This variable will be returned once the whole array is explored.
             if(i>=max && i!=0)
             {
                 max=i;
@@ -30,7 +31,6 @@ public class BirthdayCakeCandles {
             }
         
         }
-
         return maxCount;
     }
 
