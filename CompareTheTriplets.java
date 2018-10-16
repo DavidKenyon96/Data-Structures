@@ -1,4 +1,6 @@
 //Reference: https://www.hackerrank.com/challenges/compare-the-triplets/problem
+//"Alice and Bob each created one problem for HackerRank. A reviewer rates the two
+// challenges, awarding points on a scale from  to  for three categories: problem clarity, originality, and difficulty."
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -26,9 +28,11 @@ public class CompareTheTriplets {
             {
                 //do nothing
             }
+            
             //Give 'a' a point if the value of the current index is greater than 'b'
             else if (a.get(i)> b.get(i))
                 aScore++;
+            
             //Give 'b' a point if the value of the current index is greater than 'a'
             else if (a.get(i)< b.get(i))
                 bScore++;
@@ -38,8 +42,8 @@ public class CompareTheTriplets {
         List<Integer> scores = new ArrayList();
         scores.add(aScore);
         scores.add(bScore);
+
         return scores;
-    
     }
 
     public static void main(String[] args) throws IOException {
