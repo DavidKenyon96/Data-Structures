@@ -12,13 +12,13 @@ import java.util.regex.*;
 public class BreakingBestAndWorstRecords {
 
     static int[] breakingRecords(int[] scores) {
-    	//The first value in the scores[] will always be both the min and the max until further investigation
+    	//The first value in scores[] will always be both the min and the max until further investigation
         int min=scores[0], max=scores[0];
         
         //count[0]==maxCounter, count[1]==minCounter
         int [] count = new int[2];
         
-        //For loop which checks each index of scores[] and updates the minimum and maximum values in count[]
+        //for loop which checks each index of scores[] and updates the minimum and maximum values in count[]
         for(int i=0; i<=scores.length-1; i++)
         {
             if(scores[i]>max)
