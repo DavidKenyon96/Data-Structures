@@ -1,3 +1,2 @@
 # Data-Structures
-Programs made for a Data structures and algorithms analysis course
-Work in progress
+Hackerrank challenges, various algorithms, and some programs from a college Data Structures class
